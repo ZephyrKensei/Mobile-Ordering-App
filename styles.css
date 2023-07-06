@@ -1,0 +1,242 @@
+  /* <--- Defaults ---> */
+  html { scroll-behavior: smooth;}
+  
+  body {
+    font-family: 'Smythe', cursive;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  ::after,
+  ::before {
+    box-sizing: border-box;
+  }
+
+  h1, h3 { margin: 0; }
+  
+  p { margin: 0; }
+  
+  img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+  }
+  
+  .container {
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+    min-width: 400px;
+    max-height: 1170px;
+    border: 1.3px solid #757575;
+  }
+
+
+  /* <--- Styles ---> */
+header {
+  background:
+  url('https://www.shutterstock.com/image-photo/burger-banner-raw-ingredients-grilled-260nw-1769975306.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 180% 220%;
+  height: 170px;
+}
+
+.title {
+  color: #fff;
+  margin: 0 auto;
+  width: 85%;
+  padding-top: 40px;
+}
+
+h1 {
+  font-size: 39px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.title > p {
+  font-size: 22px;
+  line-height: 20px;
+  letter-spacing: 1px;
+
+}
+
+
+/* Menu Items */
+.hero-menu {
+  margin: 60px 45px;
+}
+
+.menu {
+  height: 140px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.divider {
+  border-bottom: 1px solid #D2D2D2;
+  width: 80%;
+}
+
+.emoji {
+  font-size: 80px;
+  padding-right: 30px;
+}
+
+.name {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.add-btn {
+  border: 1.5px solid #DEDEDE;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-left: auto
+}
+
+
+/* Pre-Checkout */
+.pre-checkout {
+  margin: 0 30px;
+}
+
+.order-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.checkout-items {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.remove-btn {
+  font-size: 12px;
+  color: #BBBBBB;
+  background: none;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.total-price {
+  border-top: 2px solid black;
+}
+
+.price {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-btn {
+  width: 100%;
+  height: 60px;
+  background: #16DB99;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 4px;
+  color:#fff;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 40px 0;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 542px;
+  width: 80%;
+  border-radius: 4px;
+  border: 1.3px solid #757575;
+  background: whitesmoke;
+  filter: drop-shadow(5px 5px 255px rgba(0, 0, 0, 0.5));
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.close-modal-btn-container {
+  text-align: right;
+}
+
+.modal-close-btn {
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: black;
+  cursor: pointer;
+}
+
+/* Form */
+.form-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  margin: 15px;
+}
+
+input,
+.pay-btn {
+  box-sizing: border-box;
+  width: 90%;
+  height: 71px;
+  border: 1.3px solid #757575;
+  border-radius: 4px;
+  margin: 15px;
+}
+
+form,
+.input-text,
+.pay-btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #757575;
+  padding: 15px 20px;
+}
+
+.pay-btn {
+  margin-top: 50px;
+  background-color: #16DB99;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Order Complete / Post-Checkout */
+.thankyou-text {
+  text-align: center;
+  font-size: 32px;
+  color: #065F46;
+  padding: 50px;
+}

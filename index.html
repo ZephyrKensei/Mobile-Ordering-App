@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--- Google Fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <!--- CSS --->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mobile Restaurant Ordering App</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!-- Title -->
+        <header>
+          <div class="title">
+            <h1>Austin's Diner</h1>
+            <p>The best burgers and pizzas in town</p>
+          </div>
+        </header>
+
+      <!-- Menu -->
+      <section class="hero-menu divider" id="menu-items">
+          <!-- Menu Items-->
+      </section>
+
+      <!-- Cart -->
+      <section class="pre-checkout" id="pre-checkout">
+        <!-- Render Cart Here -->
+        <p class="name order-title" >Your Order</p>
+        <div class="cart" id="thank-you">
+          <div class="order" id="order">
+          <div class="cart-total" id="cart-total"></div>
+          <div class="total-price" id="total-price"></div>
+          <button class="order-btn" id="order-btn">Complete Order</button>
+        </div>
+        <div class="thankyou-screen" id="thankyou-screen"></div>
+      </section>
+
+      
+      <!-- Checkout Screen -->
+      <div class="modal" id="modal">
+        <div class="close-modal-btn-container">
+          <button class="modal-close-btn" id="modal-close-btn">X</button>
+        </div>
+        <h3 class="form-title">Enter card details</h3>
+        <form id="order-form">
+          <input
+            type="text"
+            class="input-text"
+            id="fullName"
+            name="fullName"
+            placeholder="Enter your name"
+            required >
+
+          <input
+            type="password"
+            class="input-text"
+            id="cardNmber"
+            name="cardNumber"
+            placeholder="Enter your card number"
+            required >
+
+          <input
+            type="tel"
+            class="input-text"
+            id="cvv"
+            name="cvv"
+            placeholder="Enter CVV"
+            maxlength="3"
+            required >
+
+          <button
+            type="submit"
+            class="pay-btn"
+            id="modal-pay-btn">
+            Pay</button>
+        </form>   
+      </div>
+
+    </div>
+    <script src="./app.js" type="module" async></script>
+  </body>
+</html>
