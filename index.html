@@ -9,7 +9,8 @@
     <!--- Google Fonts --->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Smythe&display=swap" rel="stylesheet">
     <!--- CSS --->
     <link rel="stylesheet" href="./styles.css">
     <title>Mobile Restaurant Ordering App</title>
@@ -17,14 +18,17 @@
 
   <body>
     <div class="container">
-
-      <!-- Title -->
-        <header>
-          <div class="title">
-            <h1>Austin's Diner</h1>
-            <p>The best burgers and pizzas in town</p>
-          </div>
-        </header>
+      <div class="wrapper">
+        <!-- Title -->
+      <header>
+        <div class="card">
+          <h1 class="diner">
+            DIN<span class="faulty-letter">E</span>R
+          </h1>
+          <h2 class="welcome">Welcome!</h2>
+          <p class="sub-heading">- - The best burgers and pizzas in town - -</p>
+        </div>
+      </header>
 
       <!-- Menu -->
       <section class="hero-menu divider" id="menu-items">
@@ -84,7 +88,7 @@
             Pay</button>
         </form>   
       </div>
-
+      </div>
     </div>
     <script src="./app.js" type="module" async></script>
   </body>

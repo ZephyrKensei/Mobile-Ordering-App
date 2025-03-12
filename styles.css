@@ -1,84 +1,132 @@
-  /* <--- Defaults ---> */
-  html { scroll-behavior: smooth;}
-  
-  body {
-    font-family: 'Smythe', cursive;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6;
-    letter-spacing: 0;
-    color: black;
-    margin: 0;
-    padding: 0;
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-
-  h1, h3 { margin: 0; }
-  
-  p { margin: 0; }
-  
-  img {
-    width: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-    border-style: none;
-  }
-  
-  .container {
-    width: 100%;
-    margin: auto;
-    max-width: 600px;
-    min-width: 400px;
-    max-height: 1170px;
-    border: 1.3px solid #757575;
-  }
-
-
-  /* <--- Styles ---> */
-header {
-  background:
-  url('https://www.shutterstock.com/image-photo/burger-banner-raw-ingredients-grilled-260nw-1769975306.jpg');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 180% 220%;
-  height: 170px;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
+/* <--- Defaults ---> */
+html { scroll-behavior: smooth; }
 
-.title {
-  color: #fff;
-  margin: 0 auto;
-  width: 85%;
-  padding-top: 40px;
-}
-
-h1 {
-  font-size: 39px;
-  letter-spacing: 1px;
+body {
+  font-family: 'Smythe', cursive;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: black;
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+  background: url("https://res.cloudinary.com/dff1ci6jk/image/upload/v1454262398/background-body_agzqmo.jpg");
 }
 
-.title > p {
-  font-size: 22px;
-  line-height: 20px;
-  letter-spacing: 1px;
-
+h1, p {
+  margin: 0;
 }
 
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 600px;
+  height: 100vh;
+}
+
+.wrapper {
+  background-color: rgb(80,199,199);
+  display: grid;
+  margin: 1em auto;
+  padding: 2em 1em;
+  position: relative;
+  row-gap: 2em;
+  width: 32em;
+}
+.wrapper::before {
+  background-color: darkslategrey;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 2em;
+  transform: rotate(-3deg);
+  z-index: -1;
+}
+
+/* <--- Styles ---> */
+.card {
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: .5625rem;
+  padding: 0 20px;
+  background-color: #2d3636;
+}
+
+.diner {
+  font-size: 72px;
+  font-family: 'Fredoka One', serif;
+  display: block;
+  color: transparent;
+  paint-order: fill stroke markers;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fed128;
+  text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.faulty-letter {
+  -webkit-text-stroke-color: #444444;
+  text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: 9999;
+}
+
+.welcome,
+.sub-heading {
+  display: block;
+  color: #fff;
+  font-size: 40px;
+  font-family: Pacifico, Parisienne, serif;
+  text-shadow: 0 0 3vw #0000;
+  font-weight: normal;
+  text-align: right;
+  margin: 10px;
+}
+.sub-heading{
+  font-size: 20px;
+  text-align: center;
+}
+
+@keyframes blink {
+  from,
+  38%,
+  43.25%,
+  49.5%,
+  51.125%,
+  to {
+  -webkit-text-stroke-color: #444444;
+  text-shadow: 0 0 1vw #222222, 0 0 1vw #222222, 0 0 1vw #222222, 0 0 0.2vw #444444;
+}
+
+38.5%,
+43%,
+50%,
+51% {
+  -webkit-text-stroke-color: #fed128;
+  text-shadow: 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 3vw #fa1c16, 0 0 0.4vw #fed128;
+}
+}
 
 /* Menu Items */
 .hero-menu {
-  margin: 60px 45px;
+  margin: 10px auto;
 }
 
 .menu {
   height: 140px;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
@@ -87,21 +135,20 @@ h1 {
 }
 
 .emoji {
-  font-size: 80px;
+  font-size: 60px;
   padding-right: 30px;
 }
 
 .name {
   font-size: 28px;
-  margin-top: 10px;
+  margin: 0 auto;
 }
 
 .price {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .add-btn {
-  border: 1.5px solid #DEDEDE;
   border-radius: 50%;
   width: 100%;
   max-width: 50px;
@@ -111,7 +158,6 @@ h1 {
   cursor: pointer;
   margin-left: auto
 }
-
 
 /* Pre-Checkout */
 .pre-checkout {
@@ -133,8 +179,9 @@ h1 {
 }
 
 .remove-btn {
-  font-size: 12px;
-  color: #BBBBBB;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #fff;
   background: none;
   border: none;
   padding: 0 20px;
@@ -145,17 +192,10 @@ h1 {
   border-top: 2px solid black;
 }
 
-.price {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .order-btn {
   width: 100%;
   height: 60px;
-  background: #16DB99;
+  background: darkslategrey;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   border: none;
   border-radius: 4px;
