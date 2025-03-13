@@ -141,11 +141,14 @@ h1, p {
 
 .name {
   font-size: 28px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .price {
   font-size: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .add-btn {
@@ -216,12 +219,13 @@ h1, p {
   right: 0;
   margin: auto;
   height: 542px;
-  width: 80%;
+  width: 60%;
   border-radius: 4px;
   border: 1.3px solid #757575;
-  background: whitesmoke;
   filter: drop-shadow(5px 5px 255px rgba(0, 0, 0, 0.5));
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ddd;
+  background: url("https://res.cloudinary.com/dff1ci6jk/image/upload/v1454262398/background-body_agzqmo.jpg");
 }
 
 .close-modal-btn-container {
@@ -234,6 +238,7 @@ h1, p {
   border: 1px solid transparent;
   color: black;
   cursor: pointer;
+  font-size: 30px;
 }
 
 /* Form */
@@ -266,8 +271,7 @@ form,
 }
 
 .pay-btn {
-  margin-top: 50px;
-  background-color: #16DB99;
+  background-color: darkslategrey;
   color: whitesmoke;
   font-weight: 700;
   font-size: 20px;
